@@ -12,7 +12,6 @@ The purpose of this project is to demonstrate the difference between:
 
 Everything is simulated. No real systems are connected.
 
-------------------------------------------------------------------------
 
 ## Project Overview
 
@@ -25,8 +24,6 @@ Action buttons
 
 This is the starting point of the process.
 
-------------------------------------------------------------------------
-
 ### index.html + styles.css
 
 Static Elsmart web clone.
@@ -36,7 +33,6 @@ Mätarnr. - Kommun - Installatör - Fastighetsägare
 
 Used by: - Selenium (RPA robot) - BPA demo engine
 
-------------------------------------------------------------------------
 
 ### bfus_clone_v3.py
 
@@ -47,8 +43,6 @@ Agreement wizard (Skapa avtal) - Price parameters - Fakturavillkor -
 Visual update markers
 
 This is where service data is updated and agreements are created.
-
-------------------------------------------------------------------------
 
 ### bpa_demo_v2.py
 
@@ -61,7 +55,6 @@ Allows: - Running full process - Running step-by-step - Resetting state
 No image recognition is used here. The automation calls simulated system
 APIs directly.
 
-------------------------------------------------------------------------
 
 ### rpa_robot_with_start_button_v2.py
 
@@ -74,10 +67,6 @@ for popups - Switches windows - Extracts web data - Fills BFUS forms
 
 This version is intentionally more fragile --- it shows how traditional
 RPA behaves.
-
-------------------------------------------------------------------------
-
-## Process Flow
 
 1.  Open LIME case
 2.  Read data
@@ -94,7 +83,6 @@ RPA behaves.
 9.  Return to LIME
 10. Update checklist
 
-------------------------------------------------------------------------
 
 ## How to Run
 
@@ -104,7 +92,6 @@ python bpa_demo_v2.py
 
 Then use: - "Kör hela processen" or - "Kör steg för steg"
 
-------------------------------------------------------------------------
 
 ### Run RPA robot
 
@@ -119,7 +106,6 @@ python rpa_robot_with_start_button_v2.py --run
 Make sure: - Template PNG files exist in /templates - Windows are
 visible - Screen resolution matches template images
 
-------------------------------------------------------------------------
 
 ## Folder Structure
 
@@ -127,7 +113,6 @@ visible - Screen resolution matches template images
 rpa_robot_with_start_button_v2.py ├── index.html ├── styles.css └──
 templates/
 
-------------------------------------------------------------------------
 
 ## Notes
 
