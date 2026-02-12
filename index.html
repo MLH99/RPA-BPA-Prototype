@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elsmart – Klon (Prototyp)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top header -->
+  <header class="topbar" role="banner" aria-label="Elsmart toppmeny">
+    <div class="topbar__left">
+      <div class="brand" aria-label="Systemnamn">Elsmart</div>
+      <nav class="topnav" aria-label="Huvudnavigering">
+        <a href="#" class="topnav__link is-active">Nätanmälan</a>
+      </nav>
+    </div>
+    <div class="topbar__right">
+      <button class="iconbtn" aria-label="Sök">🔍</button>
+      <a class="topbar__link" href="#">Hjälp</a>
+      <button class="userbtn" aria-label="Användarmeny">👤 ▾</button>
+    </div>
+  </header>
+
+  <!-- Second nav row -->
+  <div class="subbar" role="navigation" aria-label="Modulmeny">
+    <div class="subbar__links">
+      <a href="#" class="subbar__link is-active">Hem</a>
+      <a href="#" class="subbar__link">Inköp</a>
+      <a href="#" class="subbar__link">Ärenden</a>
+      <a href="#" class="subbar__link">Arbetsorder</a>
+      <a href="#" class="subbar__link">Admin</a>
+    </div>
+    <div class="subbar__right">
+      <span class="pill">Handläggare: Exempel</span>
+      <span class="pill">Exempelgatan 1, 12345 EXEMPELSTAD</span>
+      <span class="pill">0000000000000000</span>
+      <span class="pill">E-0000-00</span>
+    </div>
+  </div>
+
+  <!-- Page title + tabs -->
+  <div class="pagehead">
+    <div class="breadcrumbs">
+      <span class="crumb">Ny anläggning</span>
+      <span class="crumb-sep">›</span>
+      <span class="crumb is-strong">Anläggning med en mätare</span>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Vyer">
+      <button class="tab is-active" role="tab" aria-selected="true">Noteringar</button>
+      <button class="tab" role="tab" aria-selected="false">Arbetsorder</button>
+      <button class="tab" role="tab" aria-selected="false">Utskrift</button>
+      <button class="tab" role="tab" aria-selected="false">Ärendehantering</button>
+      <button class="tab" role="tab" aria-selected="false">Kundinfo</button>
+    </div>
+  </div>
+
+  <!-- Main layout -->
+  <div class="layout">
+    <!-- Left sidebar -->
+    <aside class="sidebar" aria-label="Sektioner">
+      <div class="sidebar__title">Generella upplysningar</div>
+      <nav class="sidenav" aria-label="Sidmeny">
+        <a class="sidenav__link" href="#">Installatör</a>
+        <a class="sidenav__link is-active" href="#">Anläggning</a>
+        <a class="sidenav__link" href="#">Avtalsägare</a>
+        <a class="sidenav__link" href="#">Fastighetsägare</a>
+        <a class="sidenav__link" href="#">Betalningsansvarig</a>
+        <a class="sidenav__link" href="#">Teknisk data</a>
+        <a class="sidenav__link" href="#">Önskad servisledning</a>
+        <a class="sidenav__link" href="#">Servissäkring och mätarsäkring</a>
+        <a class="sidenav__link" href="#">Övrigt</a>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="content" aria-label="Elsmart innehåll">
+      <div class="content__toolbar">
+        <button class="smallbtn">Notering</button>
+        <button class="smallbtn">Arbetsorder</button>
+        <button class="smallbtn">Utskrift</button>
+        <button class="smallbtn">Ärendehantering</button>
+        <button class="smallbtn">Kundinfo</button>
+
+        <div class="spacer"></div>
+
+        <label class="status">
+          <span class="status__dot"></span>
+          <span>Normal</span>
+        </label>
+      </div>
+
+      <!-- Cards / sections (scroll) -->
+      <section class="grid">
+        <article class="card">
+          <header class="card__header">
+            <h2 class="card__title">Inledning</h2>
+          </header>
+          <div class="card__body two-col">
+            <dl class="kv">
+              <div class="kv__row"><dt>Ref. nr.</dt><dd>E-0000-00</dd></div>
+              <div class="kv__row"><dt>Datum mottaget</dt><dd>2025-01-01</dd></div>
+              <div class="kv__row"><dt>Kommun</dt><dd>0000 EXEMPELSTAD</dd></div>
+              <div class="kv__row"><dt>Område</dt><dd>REG</dd></div>
+              <div class="kv__row"><dt>Nätstation</dt><dd>00000</dd></div>
+            </dl>
+
+            <dl class="kv">
+              <div class="kv__row"><dt>Mätarnr.</dt><dd>00000000000000</dd></div>
+              <div class="kv__row"><dt>Anläggnings-id</dt><dd>0000000000000000</dd></div>
+              <div class="kv__row"><dt>Teknisk nr.</dt><dd>TN-0000</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card__header">
+            <h2 class="card__title">Installatör</h2>
+          </header>
+          <div class="card__body">
+            <dl class="kv">
+              <div class="kv__row"><dt>Namn</dt><dd>Installatör AB</dd></div>
+              <div class="kv__row"><dt>Kontakt</dt><dd>Kontakt Person</dd></div>
+              <div class="kv__row"><dt>Telefon</dt><dd>—</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card__header">
+            <h2 class="card__title">Anläggning</h2>
+          </header>
+          <div class="card__body">
+            <dl class="kv">
+              <div class="kv__row"><dt>Anläggningsadress</dt><dd>Exempelgatan 1</dd></div>
+              <div class="kv__row"><dt>Postnr/Ort</dt><dd>12345, EXEMPELSTAD</dd></div>
+              <div class="kv__row"><dt>Kommun</dt><dd>ESKILSTUNA</dd></div>
+              <div class="kv__row"><dt>Koordinat X</dt><dd>—</dd></div>
+              <div class="kv__row"><dt>Koordinat Y</dt><dd>—</dd></div>
+              <div class="kv__row"><dt>Typ av kundanläggning</dt><dd>Fastighetstyp</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card__header">
+            <h2 class="card__title">Fastighetsägare</h2>
+          </header>
+          <div class="card__body">
+            <dl class="kv">
+              <div class="kv__row"><dt>Typ</dt><dd>Organisation</dd></div>
+              <div class="kv__row"><dt>Namn</dt><dd>Exempelföretag AB</dd></div>
+              <div class="kv__row"><dt>C/O</dt><dd>—</dd></div>
+              <div class="kv__row"><dt>Utdelningsadress</dt><dd>Box 123</dd></div>
+              <div class="kv__row"><dt>Postnr/Ort</dt><dd>123 45 EXEMPELSTAD</dd></div>
+              <div class="kv__row"><dt>Telefon/Mobil</dt><dd>010-000 00 00</dd></div>
+              <div class="kv__row"><dt>E-post</dt><dd>—</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card__header">
+            <h2 class="card__title">Betalningsansvarig</h2>
+          </header>
+          <div class="card__body">
+            <dl class="kv">
+              <div class="kv__row"><dt>Typ</dt><dd>Organisation</dd></div>
+              <div class="kv__row"><dt>Namn</dt><dd>Exempelföretag AB</dd></div>
+              <div class="kv__row"><dt>C/O</dt><dd>—</dd></div>
+              <div class="kv__row"><dt>Utdelningsadress</dt><dd>Box 123</dd></div>
+              <div class="kv__row"><dt>Postnr/Ort</dt><dd>123 45 EXEMPELSTAD</dd></div>
+              <div class="kv__row"><dt>Telefon/Mobil</dt><dd>010-000 00 00</dd></div>
+              <div class="kv__row"><dt>E-post</dt><dd>info@example.se</dd></div>
+              <div class="kv__row"><dt>Fakturaref.</dt><dd>—</dd></div>
+            </dl>
+          </div>
+        </article>
+
+      
+        <article class="card">
+          <header class="card__header card__header--withicon">
+            <h2 class="card__title">Servissäkring och Mätarsäkring</h2>
+            <button class="editicon" aria-label="Redigera">✎</button>
+          </header>
+          <div class="card__body">
+            <dl class="kv kv--wide">
+              <div class="kv__row"><dt>Servissäkring bef</dt><dd>× A</dd></div>
+              <div class="kv__row"><dt>Servissäkring ny</dt><dd>× A</dd></div>
+              <div class="kv__row"><dt>Servissäkring ändrad</dt><dd>—</dd></div>
+
+              <div class="kv__spacer" aria-hidden="true"></div>
+
+              <div class="kv__row"><dt>Mätarsäkring bef</dt><dd>× A</dd></div>
+              <div class="kv__row"><dt>Mätarsäkring ny</dt><dd>—</dd></div>
+              <div class="kv__row"><dt>Mätarsäkring ändrad</dt><dd>—</dd></div>
+
+              <div class="kv__spacer" aria-hidden="true"></div>
+
+              <div class="kv__sectiontitle">Omsättning</div>
+              <div class="kv__row"><dt>Omsättning</dt><dd>—</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card__header">
+            <h2 class="card__title">Huvudsakligt uppvärmningssätt</h2>
+          </header>
+          <div class="card__body">
+            <dl class="kv kv--wide">
+              <div class="kv__row"><dt>Huvudsakligt uppvärmningssätt</dt><dd>Uppvärmningstyp</dd></div>
+              <div class="kv__row"><dt>Beräknat färdigdatum</dt><dd>2026-01-01</dd></div>
+              <div class="kv__row"><dt>Årsförbrukning</dt><dd>—</dd></div>
+              <div class="kv__row"><dt>Effekt</dt><dd>—</dd></div>
+              <div class="kv__row">
+                <dt>Anläggningen innehåller utrustning som kan ge stora spänningsvariationer och startströmmar</dt>
+                <dd>—</dd>
+              </div>
+              <div class="kv__row"><dt>Önskad mätarplacering</dt><dd>—</dd></div>
+            </dl>
+          </div>
+        </article>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>
